@@ -1,13 +1,86 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+
+body{
+font-family: Arial, Helvetica, sans-serif;
+}
+.App{
+ position: relative;
+}
+Nav{
+
+width: 300px;
+padding: 20px;
+position: fixed;
+top:0;
+left:0;
+margin-right: 10px;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+Nav ul {
+    background-color:whitesmoke;
+    border: 1px solid dodgerblue;
+    border-radius: 5px;
+    list-style: none;
+    padding: 5px ;
+}
+
+Nav ul li{
+ padding: 10px 10px;
+ border-radius: 5px;
+ margin-bottom: 8px;
+}
+
+.main{
+    margin-left: 350px;
+    padding-top: 30px;
+}
+.Link{
+    color: brown;
+    text-decoration: none;
+}
+  
+Nav ul li:hover{
+    background-color:white;
+}
+Nav ul li:hover .Link{
+    color:rebeccapurple;
+}
+
+/*Create service styling forms*/
+.form{
+    padding-right: 15vw;
+}
+.NewService{
+    display:flex;
+    flex-direction:column
+}
+.NewService label {
+    margin-top: 1rem;
+  }
+  
+  .NewService input[type='text'],
+  .NewService input[type='number'],
+  .NewService select,
+  .NewService textarea {
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    min-height: 40px;
+    font-size: 1rem;
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+    margin-right: 0.25rem;
+    outline: none;
+  }
+
+  .NewService textarea {
+    height: 60px;
+  }
+
+.NewService button{
+    margin-top: 10px;
+    border: 1px solid dodgerblue;
+    border-radius: 5px;
+    height: 30px;
+    font-size: 18px;
 }
